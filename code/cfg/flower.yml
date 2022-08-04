@@ -1,7 +1,7 @@
 CONFIG_NAME: 'flower_lstm_4aff'
 
 DATASET_NAME: 'birds'
-DATA_DIR: '/home/yesenmao/disk/dataset/flower/flower/'
+DATA_DIR: '../data/flower/'
 
 GPU_ID: 0
 WORKERS: 1
@@ -17,7 +17,7 @@ TREE:
 
 TRAIN:
     NF: 64 # default 64
-    BATCH_SIZE: 24
+    BATCH_SIZE: 10 # 原本是24
     MAX_EPOCH: 6010
     NET_G: '../test'
 
