@@ -17,7 +17,7 @@ TREE:
 
 TRAIN:
     NF: 64 # default 64
-    BATCH_SIZE: 10 # 原本是24
+    BATCH_SIZE: 8 # 原本是24
     MAX_EPOCH: 6010
     NET_G: '../test'
 
