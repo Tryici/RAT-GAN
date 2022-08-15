@@ -1,4 +1,6 @@
-## Usage demo----take the training the flower dataset as an example:
+## RAT-GAN usage demo:
+
+### take training the flower dataset as an example
 
 <font color="red">（You can copy the following code to run it directly）</font>
 
@@ -51,7 +53,7 @@ python main.py --cfg cfg/flower.yml
    unzip ../data/flower.zip -d ../data/
    ```
 
-5. After the above operation, environment and data configuration are completed. Then you can start training the model. `cfg/flower.yml` is a file that stores model parameters.
+5. After the above operation, configurations of environment and data are completed. Then you can start training the model. `cfg/flower.yml` is a file that stores model parameters.
 
    ```
    python main.py --cfg cfg/flower.yml
