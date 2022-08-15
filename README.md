@@ -1,6 +1,6 @@
-## 以训练flower数据集为例:
+## Usage demo----take the training the flower dataset as an example:
 
-<font color="red">（复制以下代码可以直接运行）</font>
+<font color="red">（You can copy the following code to run it directly）</font>
 
 ```
 conda create -n RAT-GAN -y python=3.8 &&
@@ -15,15 +15,15 @@ unzip ../data/flower.zip -d ../data/ &&
 python main.py --cfg cfg/flower.yml
 ```
 
-## 分步骤教程：
+## Step by step tutorial：
 
-1. 创建环境，使用conda创建运行环境，环境名为`RAT-GAN`，python版本设置为3.8
+1. Create a running environment using `conda`, the environment name is set to`RAT-GAN`, and the python version is set to 3.8.
 
    ```
    conda create -n RAT-GAN -y python=3.8
    ```
 
-2. 激活创建的环境，并安装运行需要的包
+2. Activate the created environment and install packages required for running.
 
    ```
    conda activate RAT-GAN &&
@@ -31,13 +31,13 @@ python main.py --cfg cfg/flower.yml
    pip install pandas easydict nltk scikit-image pyyaml
    ```
 
-3. 从github上clone项目到本地
+3. Clone project from GitHub to the local.
 
    ```
    git clone https://github.com/Tryici/RAT-GAN.git
    ```
 
-4. 进入到项目目录`RAT-GAN/code/`中，分别下载数据集`flower.zip`到目录`../data/`，下载预训练文本编码器文件`text_encoder250.pth`到目录`../bird/`中
+4. Enter the project directory `RAT-GAN/code/`, download the dataset `flower.zip` to the directory `../data/`, and download the pretraining text encoder file `text_encoder250.pth` to directory `../bird/` respectively.
 
    ```
    cd RAT-GAN/code/  &&
@@ -45,13 +45,13 @@ python main.py --cfg cfg/flower.yml
    wget -c https://github.com/Tryici/RAT-GAN/releases/download/text_encoder250/text_encoder250.pth -P  ../bird/
    ```
 
-5. 解压数据集压缩包`flower.zip`到目录`../data/`中
+4. Unzip the dataset package ` flower.zip` to the directory `../data/`.
 
    ```
    unzip ../data/flower.zip -d ../data/
    ```
 
-6. 运行环境和数据配置完成，开始训练模型，flower.yml 文件为存储了模型参数的文件
+5. After the above operation, environment and data configuration are completed. Then you can start training the model. `cfg/flower.yml` is a file that stores model parameters.
 
    ```
    python main.py --cfg cfg/flower.yml
