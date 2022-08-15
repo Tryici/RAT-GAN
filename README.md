@@ -3,8 +3,8 @@
 <font color="red">（复制以下代码可以直接运行）</font>
 
 ```
-conda create -n RAT-GAN3 -y python=3.8 &&
-conda activate RAT-GAN3 &&
+conda create -n RAT-GAN -y python=3.8 &&
+conda activate RAT-GAN &&
 conda install -y pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch &&
 pip install pandas easydict nltk scikit-image pyyaml &&
 git clone https://github.com/Tryici/RAT-GAN.git &&
