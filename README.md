@@ -1,6 +1,6 @@
-## 以训练flower数据集为例
+## 以训练flower数据集为例:
 
-## （复制以下代码可以直接运行）：
+<font color="red">（复制以下代码可以直接运行）</font>
 
 ```
 conda create -n RAT-GAN3 -y python=3.8 &&
